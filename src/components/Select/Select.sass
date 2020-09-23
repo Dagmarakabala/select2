@@ -1,0 +1,82 @@
+.select
+  display: block
+  width: 100%
+  
+  &__container 
+    width: 50%
+    max-width: 800px
+    padding: 50px
+    margin: auto
+    margin-top: 100px
+    border: 1px solid $chambry
+    border-radius: 10px
+
+  &__name
+    padding: 20px 0px
+    font-size: 40px
+
+  .select2-selection--single, .select2-selection
+    border: 2px solid $chambry
+    border-radius: 4px
+    padding: 10px
+    height: 50px
+    font-size: 20px
+
+    &:hover
+      border: 2px solid $cerulean
+      background-color: lighten($cerulean, 50%)
+   
+    &:focus, .select2-container--focus
+      border: 2px solid $cerulean
+      border-radius: 4px
+      background-color: lighten($cerulean, 50%)
+      outline: 0
+
+  .select2-container--disabled .select2-selection--single
+    border: 2px solid $gallery
+    background-color: $gallery
+
+.select2-results__option 
+  padding: 10px
+  font-size: 18px
+
+  &:hover
+    background-color: lighten($cerulean, 50%)
+    
+.select2-selection--single:hover .select2-selection__rendered
+  color: $cerulean
+
+.select2-selection--single:focus .select2-selection__rendered
+  color: $cerulean
+
+.select2-search
+  display: none
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+  border-width: 20px 10px 0px 10px
+  border-color: $cerulean transparent transparent transparent
+  left: 0%
+
+.select2-container--disabled .select2-selection--single .select2-selection__arrow b
+  border-width: 20px 10px 0px 10px
+  border-color: $alto transparent transparent transparent
+  left: 0%
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b 
+  border-width: 0px 10px 20px 10px
+  border-color: transparent transparent $cerulean transparent
+  left: 0%
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice
+  background-color: lighten($cerulean, 50%)
+  border: 2px solid $cerulean
+  border-radius: 4px
+  padding: 5px
+  margin: -5px 5px 0 0
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove, .select2-selection__choice
+  border-right: 0
+  color: $cerulean
+
+
+
